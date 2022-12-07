@@ -122,7 +122,8 @@ $(document).ready(function () {
 
 // setInterval(checkTime, 1000);
 // checkTime();
-// --x-- open/close --x--
+
+// xxxxxxxxxx open/close xxxxxxxxxx
 
 // ----- gsap register scroll trigger -----
 gsap.registerPlugin(ScrollTrigger)
