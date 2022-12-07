@@ -36,7 +36,7 @@
 
 //     }
 // });
-// --x-- dropdown script --x--
+// --x-- dropdown script --x--xxxxx
 
 // ----- jquery function -----
 $(document).ready(function () {
