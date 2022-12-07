@@ -1,0 +1,159 @@
+/* ----- font face ----- */
+@font-face {
+    font-family: Poppins;
+    src: url(../font/poppings/Poppins-Regular.ttf);
+}
+
+/* --x-- font face --x-- */
+
+/* ----- root style ----- */
+:root {
+
+    /* --- color --- */
+    --red: #B31B38;
+    --grey: #607B7B;
+    --green: #006B38;
+    --black: #111111;
+    --white: #FFFFFF;
+    /* -x- color -x- */
+
+    /* --- box-shadow --- */
+    --boxshadow: -5px 5px 10px 0px rgba(96, 123, 123, 0.5);
+    /* -x- box-shadow -x- */
+
+}
+
+/* --x-- root style --x-- */
+
+/* ----- base style ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html {
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+/* --x-- base style --x-- */
+
+/* ----- nav-icon style ----- */
+nav.icon {
+    background-color: var(--black);
+}
+
+nav.icon .row {
+    display: flex;
+    padding: 0.8vh 15vw;
+    align-items: center;
+    background: var(--color-02);
+    justify-content: space-between;
+}
+
+nav.icon .row .col:first-child {
+    justify-content: left;
+}
+
+nav.icon .row .col:last-child {
+    justify-content: right;
+}
+
+nav.icon a {
+    font-size: 0.9rem;
+    padding: 1%;
+    width: fit-content;
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.icon a:hover {
+    color: var(--grey);
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+nav.icon #timeDiv.open {
+    color: var(--green);
+}
+
+nav.icon #timeDiv.closed {
+    color: var(--red);
+}
+
+/* --- media query --- */
+@media (max-width: 1444px) {
+    nav.icon .row {
+        padding: 0.8vh 10vw;
+    }
+}
+
+@media (max-width: 991px) {
+    nav.icon .row {
+        padding: 0.8vh 0.8vw;
+    }
+
+    nav.icon a {
+        padding-left: 1rem;
+    }
+
+    nav.icon a span {
+        display: none;
+    }
+}
+
+/* -x- media query -x- */
+
+/* --x-- nav-icon style --x-- */
+
+/* ----- navbar style ----- */
+nav.navbar {
+    padding: 0.8vh 15vw;
+    box-shadow: var(--boxshadow);
+}
+
+nav.navbar .navbar-brand img {
+    max-width: 100px;
+}
+
+nav.navbar .navbar-toggler {
+    border: 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+nav.navbar .nav-link,
+nav.navbar .dropdown-item {
+    font-weight: 500;
+}
+
+/* --- media query --- */
+@media (max-width: 1444px) {
+    nav.navbar {
+        padding: 0.8vh 10vw;
+    }
+}
+
+@media (max-width:991px) {
+    nav.navbar {
+        padding: 0.8vh 0.8vw;
+    }
+
+    nav.navbar .navbar-nav {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+/* -x- media query -x- */
+/* --x-- navbar style --x-- */
