@@ -124,6 +124,10 @@ setInterval(checkTime, 1000);
 checkTime();
 // --x-- open/close --x--
 
+// ----- gsap register scroll trigger -----
+gsap.registerPlugin(ScrollTrigger)
+// --x-- gsap register scroll trigger --x--
+
 // ----- window.js script -----
 wow = new WOW(
     {

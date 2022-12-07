@@ -114,15 +114,111 @@
     </header>
     <!-- --x-- header navigation --x-- -->
 
+    <!-- ----- home section ----- -->
+    <section class="home">
+
+        <!-- --- carousel --- -->
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="container-fluid">
+                        <div class="col-lg-4">
+                            <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
+                                <span>Dubai to Ghana</span>
+                                Shipping
+                            </h1>
+                            <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
+                                Discover a whole new world of shipping and logistics.
+                            </p>
+                            <a href="#" class="btn contact wow animate__fadeInLeft" data-wow-duration="2.5s">
+                                <i class="fa-brands fa-whatsapp"></i> chat with us!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="container-fluid">
+                        <div class="col-lg-4">
+                            <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
+                                <span>China to Ghana</span>
+                                Shipping
+                            </h1>
+                            <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
+                                Discover a whole new world of shipping and logistics.
+                            </p>
+                            <a href="#" class="btn contact wow animate__fadeInLeft" data-wow-duration="2.5s">
+                                <i class="fa-brands fa-whatsapp"></i> chat with us!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <div class="container-fluid">
+                        <div class="col-lg-4">
+                            <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
+                                <span>Full Container</span>
+                                Loading
+                            </h1>
+                            <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
+                                Discover a whole new world of shipping and logistics.
+                            </p>
+                            <a href="#" class="btn contact wow animate__fadeInLeft" data-wow-duration="2.5s">
+                                <i class="fa-brands fa-whatsapp"></i> chat with us!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- -x- carousel -x- -->
+
+        <!-- ----- counter ----- -->
+        <div class="container-fluid">
+            <div class="row counter-row">
+                <div class="col-md-3 counter">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="d-flex flex-row">
+                        <div class="data">1000</div>
+                        <span> +</span>
+                    </div>
+                    <span class="sub-title">Customers</span>
+                </div>
+                <div class="col-md-3 counter">
+                    <i class="fa-solid fa-boxes"></i>
+                    <div class="d-flex flex-row">
+                        <div class="data">15</div>
+                        <span> +</span>
+                    </div>
+                    <span class="sub-title">Container/Monthly</span>
+                </div>
+                <div class="col-md-3 counter">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="d-flex flex-row">
+                        <div class="data">3</div>
+                        <span> +</span>
+                    </div>
+                    <span class="sub-title">countries</span>
+                </div>
+            </div>
+        </div>
+        <!-- --x-- counter --x-- -->
+
+    </section>
+    <!-- --x-- home section --x-- -->
+
     <!-- ----------xxxxxxxxxx----------xxxxxxxxxx page script xxxxxxxxxx----------xxxxxxxxxx---------- -->
 
     <!-- ----- jquery script ----- -->
     <script src="./js/jquery-3.6.1.min.js"></script>
     <!-- --x-- jquery script --x-- -->
-
-    <!-- ----- fontawesome script ----- -->
-    <script src="./js/all.min.js"></script>
-    <!-- ----- fontawesome script ----- -->
 
     <!-- ----- bootstrap script ----- -->
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -147,6 +243,20 @@
     <!-- ----- custom script ----- -->
     <script src="./js/custom.js"></script>
     <!-- --x-- custom script --x-- -->
+
+    <!-- ----- inline script ----- -->
+    <script>
+        const items = document.querySelectorAll(".data");
+
+        gsap.from(items, {
+            textContent: 0,
+            duration: 5,
+            ease: Power1.easeIn,
+            snap: { textContent: 1 }
+            // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+        });
+    </script>
+    <!-- --x-- inline script --x-- -->
 
 </body>
 
