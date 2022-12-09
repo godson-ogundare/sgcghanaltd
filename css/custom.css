@@ -15,8 +15,8 @@
     --white: #FFFFFF;
 
     /* --- box-shadow --- */
-    --boxshadow: -8px 8px 5px 0px rgba(96, 123, 123, 0.5);
-    --boxshadow2: 0px 5px 5px 0px rgba(96, 123, 123, 0.5);
+    --boxshadow: -8px 8px 5px 0px rgba(0, 0, 0, 0.5);
+    --boxshadow2: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
 }
 
