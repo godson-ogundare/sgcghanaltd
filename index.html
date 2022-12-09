@@ -119,13 +119,20 @@
 
         <!-- --- carousel --- -->
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="container-fluid">
                         <div class="col-lg-4">
                             <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
-                                <span>Dubai to Ghana</span>
-                                Shipping
+                                Dubai to Ghana Shipping
                             </h1>
                             <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
                                 Discover a whole new world of shipping and logistics.
@@ -140,8 +147,7 @@
                     <div class="container-fluid">
                         <div class="col-lg-4">
                             <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
-                                <span>China to Ghana</span>
-                                Shipping
+                                China to Ghana Shipping
                             </h1>
                             <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
                                 Discover a whole new world of shipping and logistics.
@@ -156,8 +162,7 @@
                     <div class="container-fluid">
                         <div class="col-lg-4">
                             <h1 class="title wow animate__fadeInLeft" data-wow-duration="1.5s">
-                                <span>Full Container</span>
-                                Loading
+                                Full Container Loading
                             </h1>
                             <p class="sub-title wow animate__fadeInRight" data-wow-duration="2s">
                                 Discover a whole new world of shipping and logistics.
@@ -169,11 +174,13 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <button class="carousel-arrows carousel-control-prev" type="button" data-bs-target="#carousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <button class="carousel-arrows carousel-control-next" type="button" data-bs-target="#carousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -291,10 +298,10 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="card" style="width: 25rem;">
-                            <img src="./img/gl/gl-11.jpg" class="card-img-top" alt="...">
+                            <!-- <img src="./img/gl/gl-11.jpg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
                                 <h5 class="title">
-                                    <span>Swift Generation Cargo</span>
+                                    Swift Generation Cargo
                                 </h5>
                                 <a href="https://api.whatsapp.com/send?phone=233599129818" class="contact-info">
                                     <i class="fa-brands fa-whatsapp"></i> Chat With Us
@@ -349,20 +356,6 @@
     <!-- ----- custom script ----- -->
     <script src="./js/custom.js"></script>
     <!-- --x-- custom script --x-- -->
-
-    <!-- ----- inline script ----- -->
-    <!-- <script>
-        const items = document.querySelectorAll(".data");
-
-        gsap.from(items, {
-            textContent: 0,
-            duration: 5,
-            ease: Power1.easeIn,
-            snap: { textContent: 1 }
-            // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
-        });
-    </script> -->
-    <!-- --x-- inline script --x-- -->
 
 </body>
 

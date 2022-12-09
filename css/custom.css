@@ -4,26 +4,21 @@
     src: url(../font/poppins/Poppins-Regular.ttf);
 }
 
-/* --x-- font face --x-- */
-
 /* ----- root style ----- */
 :root {
 
     /* --- color --- */
     --red: #B31B38;
-    --grey: #607B7B;
+    --grey: #333333;
     --green: #006B38;
     --black: #111111;
     --white: #FFFFFF;
-    /* -x- color -x- */
 
     /* --- box-shadow --- */
-    --boxshadow: 0px 10px 10px 0px rgba(96, 123, 123, 0.5);
-    /* -x- box-shadow -x- */
+    --boxshadow: -8px 8px 5px 0px rgba(96, 123, 123, 0.5);
+    --boxshadow2: 0px 5px 5px 0px rgba(96, 123, 123, 0.5);
 
 }
-
-/* --x-- root style --x-- */
 
 /* ----- base style ----- */
 * {
@@ -43,18 +38,16 @@ body {
     height: 100%;
 }
 
-/* --x-- base style --x-- */
-
 /* ----- custom style ----- */
 .title {
-    font-weight: 500;
+    font-weight: 700;
     padding: 0.5vw 0;
     letter-spacing: 0.1rem !important;
     text-transform: uppercase;
 }
 
 .title span {
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.1rem;
     text-transform: capitalize;
 }
@@ -80,8 +73,6 @@ body {
     line-height: 2;
     text-transform: uppercase;
 }
-
-/* --x-- custom style --x-- */
 
 /* ----- nav-icon style ----- */
 nav.icon {
@@ -130,7 +121,7 @@ nav.icon #timeDiv.closed {
     color: var(--red);
 }
 
-/* --- media query --- */
+/* --- nav-icon media query --- */
 @media (max-width: 1444px) {
     nav.icon .row {
         padding: 0.8vh 10vw;
@@ -150,10 +141,6 @@ nav.icon #timeDiv.closed {
         display: none;
     }
 }
-
-/* -x- media query -x- */
-
-/* --x-- nav-icon style --x-- */
 
 /* ----- navbar style ----- */
 nav.navbar {
@@ -176,7 +163,7 @@ nav.navbar .dropdown-item {
     font-weight: 500;
 }
 
-/* --- media query --- */
+/* --- navbar media query --- */
 @media (max-width: 1444px) {
     nav.navbar {
         padding: 0.8vh 10vw;
@@ -210,10 +197,6 @@ nav.navbar .dropdown-item {
     }
 }
 
-/* -x- media query -x- */
-
-/* --x-- navbar style --x-- */
-
 /* ----- home carousel ----- */
 section.home .carousel-item {
     min-height: 60vh;
@@ -230,7 +213,7 @@ section.home .carousel-item::before {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 section.home .carousel-item .container-fluid {
@@ -268,10 +251,10 @@ section.home .carousel-item .sub-title {
     background-image: url(../img/bg/bg-05.jpg);
 }
 
-/* --x-- home carousel --x-- */
-
 /* ----- home counter ----- */
 section.home .counter-row {
+    padding: 0;
+    margin: 0;
     align-items: center;
     justify-content: center;
 }
@@ -284,20 +267,12 @@ section.home .counter {
     flex-direction: column;
     justify-content: center;
     background: var(--white);
-    transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);
-    -moz-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    -o-transform: translate(0%, -50%);
-    box-shadow: var(--boxshadow);
-}
-
-section.home .counter:first-child {
-    border-top-left-radius: 1rem;
-}
-
-section.home .counter:last-child {
-    border-top-right-radius: 1rem;
+    transform: translate(0%, -20%);
+    -webkit-transform: translate(0%, -20%);
+    -moz-transform: translate(0%, -20%);
+    -ms-transform: translate(0%, -20%);
+    -o-transform: translate(0%, -20%);
+    box-shadow: var(--boxshadow2);
 }
 
 section.home .counter .data {
@@ -319,7 +294,7 @@ section.home .counter i {
     color: var(--black);
 }
 
-/* ----- media query ----- */
+/* ----- home section media query ----- */
 @media (max-width: 767px) {
     section.home .counter-row {
         padding: 5%;
@@ -333,11 +308,20 @@ section.home .counter i {
     section.home .counter:last-child {
         border-top-right-radius: 0;
     }
+
+    section.home .counter {
+        box-shadow: none;
+        transform: translate(0%, -0%);
+        -webkit-transform: translate(0%, -0%);
+        -moz-transform: translate(0%, -0%);
+        -ms-transform: translate(0%, -0%);
+        -o-transform: translate(0%, -0%);
+    }
+
+    section.home .carousel .carousel-arrows {
+        display: none;
+    }
 }
-
-/* --x-- media query --x-- */
-
-/* --x-- home counter --x-- */
 
 /* ----- about section ----- */
 section.about {
@@ -352,8 +336,6 @@ section.about .row {
     flex-direction: column;
     justify-content: center;
 }
-
-/* --x-- about section --x-- */
 
 /* ----- service box ----- */
 section.about .row:last-child {
@@ -371,17 +353,12 @@ section.about .row:last-child {
     padding: 1rem;
     margin: 2rem;
     text-align: center;
-    border-radius: 0.5vw;
     color: var(--white);
     transition: all 0.3s ease 0s;
-    -webkit-border-radius: 0.5vw;
-    -moz-border-radius: 0.5vw;
-    -ms-border-radius: 0.5vw;
-    -o-border-radius: 0.5vw;
-    box-shadow: var(--boxshadow);
 }
 
 .service-box:hover {
+    box-shadow: var(--boxshadow);
     background: var(--grey) !important;
 }
 
@@ -454,7 +431,34 @@ section.about .row:last-child {
     opacity: 1;
 }
 
-/* --x-- service box --x-- */
+/* ----- service box media query ----- */
+@media (max-width: 991px) {
+    .service-box {
+        background: var(--grey) !important;
+    }
+
+    .service-box .service-icon {
+        transform: translateY(-100%);
+    }
+
+    .service-box .service-icon i {
+        color: var(--grey) !important;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .service-box h5 {
+        top: -40px;
+        color: var(--color-01) !important;
+    }
+
+    .service-box p {
+        opacity: 1;
+    }
+}
 
 /* ----- contact box ----- */
 .card-img-top {
@@ -499,8 +503,7 @@ section.contact .row .contact-info {
     font-weight: 600;
     margin: 0.5rem 0;
     color: var(--black);
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
+    text-transform: capitalize;
     text-decoration: none;
 }
 
@@ -529,4 +532,8 @@ section.contact .contact-bg::before {
     background: rgba(0, 0, 0, 0.3);
 }
 
-/* --x-- contact box --x-- */
+section.contact .card .title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: left !important;
+}

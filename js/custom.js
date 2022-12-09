@@ -1,6 +1,5 @@
 // ----- gsap register scroll trigger -----
 gsap.registerPlugin(ScrollTrigger)
-// --x-- gsap register scroll trigger --x--
 
 // ---------- open / close script ----------
 var now = new Date();
@@ -56,8 +55,6 @@ $(currentDayID).toggleClass("today"); //hightlights today in the view hours moda
 setInterval(checkTime, 1000);
 checkTime();
 
-// xxxxxxxxxx open / close script xxxxxxxxxx
-
 // ---------- real time script ----------
 
 function showTime() {
@@ -84,4 +81,14 @@ function showTime() {
 }
 showTime();
 
-// xxxxxxxxxx real time script xxxxxxxxxx
+// ----- window.js activation -----
+wow = new WOW(
+    {
+        boxClass: 'wow',      // default
+        animateClass: 'animated', // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+    }
+)
+wow.init();
